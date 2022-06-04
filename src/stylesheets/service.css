@@ -1,0 +1,130 @@
+.service__section{
+    background: url("../images/servicebackground.jpg");
+    background-size: contain;
+    margin: 5em 0 0 0;
+    position: relative;
+    height: 90vh;
+}
+
+.service__overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F6F9;
+    opacity: 0.98;
+}
+
+.service__cont{
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service__info{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--blue-color);
+}
+
+.service__info_head p:nth-child(1){
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    padding: 0 0 0.5em 0;
+    display: inline;
+    border-bottom: 3px solid var(--green-color);
+    font-weight: bold;
+}
+
+.service__info_head p:nth-child(2){
+    margin-top: 1em;
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    margin-right: 2em;
+}
+
+.service__info-data p:nth-child(1){
+    color: #758994;
+    line-height: 1.5em;
+}
+
+.button{
+    background-color: var(--green-color);
+    color: white;
+    padding: 1em 2em;
+    margin: 1em 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+.service__tabs{
+    z-index: 1;
+    display: flex;
+    column-gap: 1em;
+}
+
+.service__card{
+    display: flex;
+    position: relative;
+    padding: 3em;
+    color: var(--blue-color);
+    background-color: white;
+    transition-property: background-color, color;
+    transition-duration: 500ms;
+}
+
+.service__card-filled{
+    padding: 3em;
+    color: white;
+    background-color: #0B2B43;
+}
+
+.service__card-filled img{
+    width: 20%;
+}
+
+.service__card img{
+    width: 20%;
+}
+
+.service__card-head{
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+
+.service__card-info{
+    color: #758994;
+    margin: 1em 0;
+}
+
+.service__card-overlay{
+    position: absolute;
+    height: 0;
+    top: 0;
+    left: 0em;
+    z-index: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.service__card:hover .service__card-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: var(--blue-color);
+}
+
+.service__card:hover{
+    color: white;
+}
+
+.service__card-infocont{
+    z-index: 1;
+}

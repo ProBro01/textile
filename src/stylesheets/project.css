@@ -1,0 +1,90 @@
+
+.project__section{
+    margin: 8em 2em;
+}
+
+.project__cont{
+    color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project__info{
+    width: 35%;
+}
+
+.project__info p:nth-child(1){
+    font-family: 'Lato', sans-serif;
+    padding: 0.5em 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline;
+    border-bottom: 3px solid var(--green-color);
+}
+
+.project__info p:nth-child(2){
+    margin: 0.7em 0;
+    font-size: 2em;
+}
+
+.project__info p:nth-child(3){
+    color: var(--gray-color);
+}
+
+.project__imgcont{
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    column-gap: 3em;
+    justify-content: center;
+}
+
+.project__piece-cont{
+    position: relative;
+}
+
+.project__piece-overlay{
+    height: 0%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: var(--blue-color);
+    transition-property: height, padding;
+    transition-duration: 1s;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.project__piece-overlay p:nth-child(1){
+    font-size: 2em;
+}
+
+.project__piece-overlay p:nth-child(2){
+    font-size: 1em;
+}
+
+.project__piece-cont:hover .project__piece-overlay{
+    padding: 3em 1em;
+    height: 98.9%;
+}
+
+.project__piece-image-cont{
+    overflow: hidden;
+}
+
+.project__piece-image{
+    width: 200%;
+    transform: translateX(-200px);
+}
